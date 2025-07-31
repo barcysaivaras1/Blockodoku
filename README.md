@@ -1,31 +1,49 @@
-# Blockodoku
+# 🧩 Blockodoku
 
-## How to play
-The game is about completing a row, column or a 3x3 grid of cells to earn points. You can click on a piece visible at the bottom and drag it anywhere on the grid. It will then show a ghost piece behind it showing where it will be placed.
+Blockodoku is a grid-based puzzle game inspired by Sudoku and block placement mechanics. The objective is to strategically place pieces on a board to complete rows, columns, or 3×3 sections and earn points. Simple to learn, challenging to master!
+## 🎮 How to Play
+
+The core gameplay revolves around placing randomly generated shapes onto a grid. You earn points by completing:
+
+1.    Full rows
+
+2.    Full columns
+
+3.    Full 3×3 squares
+
+## 🧱 Piece Placement
+
+Click and drag one of the shapes from the bottom of the screen onto the grid. A ghost piece will appear to show where it will land before releasing.
 
 ![Piece Hovering over the board](docs/images/Hover.png)
 
-You have a selection of shapes that you can place which is refilled only when the palette is empty. This is what the board looks like after a shape has been placed.
+Once placed, the board updates to reflect the new layout.
 
 ![Shape Being Placed](docs/images/Placement.PNG)
+## ✅ Completing Rows, Columns, or 3×3 Squares
 
-
-When the you complete a row, column, or 3x3, that space will be highlighted in green and yellow to show that it will be removed and that it will increment the score.
+When a valid section is completed, it will be highlighted in green and yellow to show it's being cleared — and your score will increase accordingly.
 
 ![Completion being Highlighted](docs/images/Completion.png)
+## 🧠 Score System & Combos
 
-
-You can then continue to play until it is game over and aim for the highest score. A game over is when the player can no longer place any of the shapes in their palette on the board. This is what a game over state of the game looks like.
-
-![Game Over](docs/images/GameOver.PNG)
-
-
-The score will increase more for each subsequent completion that you get. Typically each completion gives you 10 points, however in the image below you can see that if i complete 2 at the same time or two in a row, my score is increased by 30 instead  (10*1 + 10*2 = 30)
+Each completed section earns 10 points. Multiple completions at once (or in sequence) result in combo bonuses. For example, completing two at once gives 30 points (10 for the first, 20 for the second).
 
 ![Two Completions at Once](docs/images/Completion2x.png)
+## ☠️ Game Over
 
-Lastly, I have added the automatic random play, which places random pieces in random locations which is great for testing! You need to drag the bottom of the window down to reveal it!
+The game ends when none of the current shapes in the palette can be placed on the board.
 
-## How to start
+![Game Over](docs/images/GameOver.PNG)
+## 🤖 Automatic Random Play (For Testing)
 
-Download the code and run the Controller class located within the blocks Folder. This project is made with Java, so you must have Java installed and a way to run Java code.
+An automatic "random play" mode is included for testing purposes — it randomly places pieces on the board. To access this, drag the bottom of the window downward to reveal the controls.
+## 🚀 How to Start
+
+1.    Download or clone this repository
+
+2.    Navigate to the blocks folder
+
+3.    Run the Controller class to launch the game
+
+    Note: This project is built in Java, so you must have Java installed and a compatible IDE or terminal to run Java code.
